@@ -1,0 +1,42 @@
+ 1. What is client 
+ -> A client is a piece of computer hardware of software that accesses a service made available
+ by a server. For example, web browsers are clients that connect to web server and retrive web page for display.
+
+ 2.What is server
+ ->A server is a computer program or a device that provide functionality for other programs or devices, called "clinets".
+
+ example
+ client -> Request garna lai client vanxam
+ server -> responding dina lai server vanxam
+
+ 3. Client -Server Architecture
+ -> two type of Server Architecture they are:-
+ 1. 2-tier Architecture -> A 2-tier Architecture is where a client talks directly to a server
+ 2. 3-tier Architecture -> A middleware is used.
+
+ 4.  Web Browsers
+ -> Web browsers is client, program, software or tools through which we sent HTTP request to web server.
+ It knows how to communicate with server. The  main purpose of web browsers is to locate the content on the world wide web and display the web page, image,audio,or video form.
+
+ 5. Web Server
+ -> A Web server can be either a software or a software unit or a hardware unit, which provides the webpage via HTTP. web server gets the request and find the resources then response to client. Web server provide services to the only for web applications. All the communication betweeen client (web browser) and server takes place vai HTTP.
+ Example :- tomcat, IIS, SMTP,FTP.
+
+ 6. Web Server Architecture
+ -> client-> sending request to server(HTTP resquest) webserver-> looking for request page/source->webserver->sending respone to client->client
+
+ 7. Web Application
+ -> A web application or web app is a client-server software application in which the client (or user interface) runs in web browser.
+
+ 8. What is website
+ -> Website is a colloection of related webpage that many contain text, images, audio and video. A vedio website can consist of one page, or thousands of page, depending on what the site owner is trying to accomplish.
+
+ 9. Type of Website
+ -> 1. Static -> A static website contains web pages with fixed content. It is delivered to the user a exactly as stored. Static web page displays the same information for all users.
+  2. Daynamic -> A dynamic website can contain webpage which are user frindly. User may interact with those pages.
+
+  10. Development Enviroment 
+  -> 1. Operatin system - Windows, linux, Mac etc.
+  2. Web server -> XAMPP, WAMP, MAMP etc.
+  3. Eidtor/IDE- Notepad,Notepad++,Vs code, sublime text, NetBeans ... etc
+  4. Web browser -> Chorem, Firefox etc.

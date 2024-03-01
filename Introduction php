@@ -1,0 +1,29 @@
+            1. Introduction To php
+    -> Php is Open Source Server-side programming/Scripting languages that is especially suited for 
+    web developmentand can be embedded into HTML
+    -> Php stands for Hypertext Preprocessor but it's original name, Persoanl Home page. it was created by 
+    Rumsum Lerdorf in 1994.
+    -> Php runs on various platforms Windows,linux,Unix,Mac OS X, etc.
+    -> At present in 2024 php 8.2.15 is lastest version of Php
+    -> Php File Extension .php
+    
+    2. What we can do with php
+    ->Generate Dynamic page
+    ->Handle button clicks, radio button
+    -> Create datbase Application
+    -> Client\Server Application
+    -> student Registration
+    -> Online Course
+    -> News Portal website
+    -> Online Shooping cart
+    -> Chat rooms more etc.
+
+    <----Example!-->
+    <!DOCTYPE HTML>
+    <html>
+        <body>
+            <?php 
+            echo "Hello world";
+            ?>
+        </body>
+    </html>

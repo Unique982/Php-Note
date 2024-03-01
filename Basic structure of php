@@ -1,0 +1,3 @@
+<?php  //-> Opeing markup/Opeing Tag
+ echo "Helllo Word";// php code
+// -> closing markup/ closing tag ?> 

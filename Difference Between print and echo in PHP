@@ -1,0 +1,5 @@
+// Print Vs echo 
+1. echo has no return value while print is more like php function
+so it returns value, which is always set to 1.
+2. echo can take multiple parameters while priint can take one argument.
+3. echo is marginally faster than print.

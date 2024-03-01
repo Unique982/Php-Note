@@ -1,0 +1,31 @@
+<!-- 1. Define Variable -->
+// variables :- variables are containers which is used to store infromation
+<!--2. Type of Variable -->
+ type variable:- Local Variable
+                2. Global Variable      
+                3. Static variable
+  variable Declaration
+  In php, variable name begin with $ sign, followed by a name. 
+  $roll $class $nmae $email $price
+
+<!-- 3. Rules of variables -->
+ // rules 
+  1. Variable starts with $ sign.
+  2. variable name only starts with a letter, an underscore(-).
+  3. Variable name cannot start with  a number.
+  4. It is case sensitive which implies that the svariable num in lowercase is different from variable num in uppercase.
+  5. Do not use predefined constant name eg. PHP_VERSION, PHP_OS etc.
+  6. do not use reserved keywords eg else, if etc.
+<!-- 4. Variable Initialization -->
+ //variable initialization
+  -> PHP cna store all type of data in variables. before using a variable in php, assign a value ti it so Php will create that variable
+  store data in it . That means we have to assign data to a variable before attempting to read a variable's value.
+  eg :- $nmae = "Unique News";->string value 
+  $roll = 111;->int value 
+  $price = 2.45;-> flaot value
+  <!-- 5. example code -->
+  <?php
+  $_name ="Example";
+  $_roll = 111;
+  echo $name,$roll;
+  ?>
