@@ -6,7 +6,8 @@
     -> Php runs on various platforms Windows,linux,Unix,Mac OS X, etc.
     -> At present in 2024 php 8.2.15 is lastest version of Php
     -> Php File Extension .php
-    
+    or/
+PHP stands for: Hypertext Preprocessor. PHP is the most popular open-source programming language for web development. It is a server-side language that collects form data, sends or retrieves cookies, interact with the database, and much more. With the help of PHP, we can create static as well as dynamic websites.
     2. What we can do with php
     ->Generate Dynamic page
     ->Handle button clicks, radio button
