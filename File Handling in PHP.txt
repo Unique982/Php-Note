@@ -1,0 +1,6 @@
+<!-- File Handling in PHP
+Opening file
+Reading file
+writing file
+closing file
+-->
