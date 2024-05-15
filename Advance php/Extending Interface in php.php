@@ -20,7 +20,7 @@ interface Son extends Father{
 interface Teacher{
     const c = 111;
     function test();
-}
+}s
 interface Student{
     const d = 17373;
     function showvalue();
