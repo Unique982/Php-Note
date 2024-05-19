@@ -1,0 +1,29 @@
+<!-- Mysqli_query() 
+-> This function is used to preform a query against the database.
+For successful SELECT,SHOW,DESCRIBE or EXPLAIN queries it will return a mysqli_result object.
+For other successful queries it will return TRUE and FALSE on failure.
+ syntax:mysqli_query(Connection, Query, Result_mode);
+ ex: mysqli_result($conn,$sql);
+  Connection:- it specifies the connection to use
+  Query:It specifies the query string
+  RESULT_mode : It specifies a constant. Either:
+    MYSQLI_USE_RESULT (use this if we have to retrieve large amount of data)
+    MYSQLI_STORE_RESULT(this is default)
+
+    mysqli_num_rows() :-> Function returns the number of rows in a result set.
+    syntax:mysqli_num_rows(mysqli_result);
+    Where mysqli_result specifies a result set identifier returned by 
+    mysqli_query(), mysqli_store_result() or mysqli_use_result()
+    ex:mysqli_num_rows($result);
+
+    mysqli_fetch_assoc() :-> function fetches a result row as an associative array. 
+    it returns as associative array of strings representing the fetched row.
+    NULL if there are no more rows in result_set. Fieldnames returned from this function are case_sensitive.
+syntax: mysqli_fetch_assoc(mysqli_result);
+Where mysqli_result specifies a result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()
+ex: Mysqli_fetch_assoc($result);
+
+Mysqli_error() -> function return the last error description for the most recent function call, if any ."" if no error occured.
+syntax: mysqli_error(connection);
+ex: mysqli_error($conn);
+-->
