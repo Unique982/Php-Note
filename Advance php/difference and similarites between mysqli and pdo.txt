@@ -1,0 +1,10 @@
+//difference and similarites between mysqli and pdo
+
+// Defferences
+-> MySQLi is supports dual interface procedural and object-oriented while PDO supports only object-oriented.
+-> Mysqli will work only with mysql database while PDO will work on 12 different database systems.
+
+// similarites
+1.-> Both supports prepared Statements
+2.-> Both provides same level of security
+3.-> Both supports object oriented

@@ -1,0 +1,12 @@
+// PHP Data Object(PDO)
+-> PDO is a database access layer which provides a fast and consistent interface for accessing
+and managing database in PHP application. Every DBMS has specific PDO drive(s) that must be installed when you are using
+PDO in PHP applications. It supports only Object Oriented interface. PDO will work on 12 different Database system
+ 
+ //Benefits of PDO
+ 1.-> Usability
+ 2.-> Error Handling
+ 3.-> Multiple Database
+ 4.-> secure
+ 5.-> Reusability
+ 6.-> Exception class
