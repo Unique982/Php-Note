@@ -1,0 +1,54 @@
+// MYSQLI procedural witj prepared statement
+1.-> mysqli_prepare() - It prepares an SQL statement and returns a statement and returns a statement handle to be used for
+futher operations on the statement or FALSE if an error occurred.
+The query must consist of a single SQL statement.
+Syntax : mysqli_prepare ($conn, $sql);
+$conn returned by mysqli_connect()
+$sql = "INSERT INTO student (name, address) VALUES(?,?)";
+
+2.-> mysqli_stmt_bind_param()
+-> it binds variables to a prepared statement as parameters.
+it returns TRUE on success or FALSE on failure.
+syntax: mysqli_stmt_bind_param($result, types, $variables);
+where $result is returned by  mysqli_prepare($conn, $sql);
+$variables are variable like $name,$phone, $address etc.
+s - string (text)
+i - integer (whole number)
+d - double (floating point number)
+b - BLOB (such as image, PDF file etc)
+Ex: $result  = mysqli_prepare($conn,$sql);
+mysqli_stmt_bind_param($result, 'sis',$name, $phone, $address)
+
+3.-> mysqli_stmt_execute() 
+-> it executes a query that has been previously prepared using the mysqli_prepare()
+function. It returns TRUE on success or FALSE on failure.
+syntax: mysqli_stmt_execute($result);
+
+4.-> mysqli_stmt_close()
+-> It closes a prepared statement and also deallocates the statement handle.
+if the current statement has pending or unread results,this function cancels them 
+so that the next query can be executed. It returns TRUE on success Or FALSE on failure.
+syntax: mysqli_stmt_close($result);
+
+For select 
+1.-> mysqli_stmt_bind_result()
+-> It binds variables to a prepared statement for result storage.
+ it returns TRUE on success OR FALSE on failure
+ ex: mysql-stmt_bind_result($result, $name, $address, $phone);
+
+ 2.-> mysqli_stmt_fetch()
+-> It fetch the result from a prepared statement into the variales bounded by mysqli_stmt_bind_result().
+ex: msqli_stmt_fetch($result); 
+
+3.-> mysqli_stmt_store_result()
+-> It transfers a result set from a prepared statment.
+it returns TRUE on success or FALSE on failure
+ex: mysqli_stmt_store_result($result);
+
+4.-> mysqli_stmt_num-rows()
+-> It return the number o rows in statement result set.
+ex: mysqli_stmt_num-rows($result);
+
+5.-> mysqli_stmt_free_result()
+-> It frees the result memeory associated with the statement, which
+was alocated by mysqli_stmt_store_result().
