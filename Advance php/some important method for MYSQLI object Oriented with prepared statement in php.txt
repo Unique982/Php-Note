@@ -1,0 +1,54 @@
+// MYSQLI OO with prepared statement
+1.-> prepare() :
+-> It prepared an SQL statement and returns a statement handle to be used for further operations
+on the statement or FALSE if an error occurred. The query must consist of a single SQL statement.
+syntax: -$con->prepare($sql)
+$sqli= "INSERT into emp(name,email) VALUES(?,?)";
+
+2.-> bind_param()
+-> it binds variables to a prepared statement as parameters.
+It returns TRUE on sucess or FALSE on Failure.
+syntax: $result->bind_param(type,$variables);
+where Types are s,i,d,be$variable are variable like $name $phone $email etc
+s- string(text)
+i - integer(whole number)
+d - double(floating point number)  
+b - BLOB(such as img, pdf file etc)
+ex; $result = $conn-> prepare($sql)
+$result -> bind_param('sis',$name,$phone,$address)
+
+3.->execute()
+-> it executes a query that has been previously prepared using the prepare() function. it returns TRUE on success or FALSE on Failure.
+sntax: $result->execute();
+
+4.-> close()
+-> It closes a prepared statement and also deallocates the statement handle.
+if the current statements has pending or unread result, this function cancels them 
+so that the next query can be executed.
+It returns TRUW on success  or FALSE on failure.
+syntax: $result->close();
+
+
+// for select 
+1. bind_result()
+-> It binds variables to a prepared statement for result storage.
+It returns TRUE on success or FALSE on failure.
+ex: $result-> bind_result($name,$address);
+
+2.-> fetch()
+-> It fetch the result from a prepared statment into the variable
+bound by bind_result()
+ex : $result-> fetch();
+
+3.-> store_result()
+-> it transfersa result set from a prepared statement.
+it returns TRUE on success or FALSE on failure.
+ex: $result-> store_result();
+
+4.-> num_rows
+-> It return the number of rows in statement result set.
+ex: $result->num_rows;
+
+5.-> free_result()
+-> It frees result memory associated with the statement, which was allocated by store_result()
+ex: $result->free_result();
