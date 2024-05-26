@@ -1,0 +1,47 @@
+// PDO With Prepared Statement
+1.-> prepare():-
+-> It prepares an SQL statement to be executed by the execute() Method.
+It returns PDO statement object on Sucess or returns FALSE or emits PDO Exception on Failure.
+syntax: -$conn->prepare($sql);
+$sql = "INSERT INTO emp(name,email,address)VALUES(?,?,?)";
+$sql = "INSERT INTO emp(name,email,address)VALUES(:naem,:email,:address)";
+
+// Rules
+.->The statement template can contain zero or more named(:name) or question marks(?)
+Parameter markers for which real values will be substituted when the statement is executed
+.-> Both named and question marks parameter markers cannot be used within the same statement template; Only one or the other parameter style.
+
+2.-> bindParam()
+-> It biinds a parameter to the specified variables nameIt returns TRUE on Success
+or FALSE on failure.
+syntax: $result->bindParam(parameter_markers,$variables,data_type,lenght);
+ex:
+$sql = "INSERT INTO emp(name,email,address) VALUES(:naem,:email,:address)";
+$result->$con->prepare($sql);
+$result->bindParam(':name',$name);
+$result->bindParam(':email',$email);
+$result->bindParam(':address',$address);
+
+3.-> bindvalue()
+-> It binds a value to a paramter.It returns TRUE on FALSE on failure.
+syntax: $result->bindValue(parameter_markers,$variables/values,data_tye);
+ex:$sql = "INSERT INTO emp(name,email,address) VALUES(:naem,:email,:address)";
+$result=$conn->prepare($sql);
+$result->bindValues(':name',$name);
+
+4.->execute()
+-> It executea prepared statement. it returs TRUE on success or FALSE on failure.
+syntax: $result->execute([aray $input_parameter]);
+$input_parameter
+-> An array of values with as many elements as there are bound parameter int the SQL statement being execute.
+All values are treated as PDO::PARAM_STR
+ex: $result->execute(array(':name'=>$name,'email'=>$email));
+$result->ececute(array($name,$roll,$address));
+
+//Note:- Multiple values cannot be bound to a single parameter
+
+.->PDO::PARAM_BOOL:- Represents a boolean data_type
+.->PDO::PARAM_NULL:- Represents the SQL NULL datatype.
+.-> PDO::PARAM_INT: Represents the SQL INTEGER data type.
+.-> PDO::PARAM_STR:- Represents the SQL CHAR, VARCHAR or other striing data type.
+.-> PDO::PARAM_LOB:- Represents the SQL large obect data type.
