@@ -1,0 +1,11 @@
+// Cookies
+-> A cookies is a small piece of text data set by web server that resided on the client's 
+machine. Once it's been set, the client automatically returns the cookies to the web server
+with each request that it makes. This allows the server to place value it wishes to 'remember'
+in the cookies, and have access to them when creating a respone.
+
+// Type Of cookies
+1.-> Session Cookies:- Cookies that are set without the expires field are called session cookiess.
+It is destroyed when the user quits the browser.
+
+2.--> Persistent Cookies-> The browser keeps it up until their expiration data is reached

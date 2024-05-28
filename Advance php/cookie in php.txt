@@ -1,0 +1,4 @@
+// PHP cookies
+-> PHP transparently supports HTTP cookies. Cookies are a mechanism for storing data
+in the remote browser and thus tracking or identifying return users.
+Cookies are part of the HTTP header.
