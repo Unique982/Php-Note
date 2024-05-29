@@ -1,0 +1,15 @@
+// FILTERS in PHP
+-> PHP filters are used to validate and sanitize external input. This is especially useful
+when the data source contains unknown data, like user input. for example, data form an html form
+,cookies, sql statement result etc.
+
+There are two main types of filtering
+.-> Validation
+-> validation is used to validate or check if the data meets certain qualififcations.
+for example, passing in FILTER_VALIDATION_EMAIL will determine if the data is a valid email address
+but will not change the data it self.
+
+.-> Sanitization
+-> Sanitization will sanitize the data , so it may alter it by removing undersired characters .
+for example, passing in FILTER_SANITIZATION _EMAIL will remove characters that are inappropriate for and
+email address to contain. that sad, it does not validate the data
